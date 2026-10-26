@@ -1,0 +1,56 @@
+Deadlock Tempo 1.10.0 — object pictures and original NPC portraits
+
+Added in v1.13.3 (2026-10-20): urn -> soul_jar_marker_psd.png.
+Original Valve minimap artwork, extracted read-only from the installed pak01_dir.vpk:
+panorama/images/minimap/soul_jar_marker_psd.vtex_c.
+CRC32 verified by work/game-assets.py; decoded with Source 2 Viewer CLI.
+Embedded unchanged, retaining source colors, transparency and proportions.
+
+Artwork depicts Valve / Deadlock assets; it is not original Tempo artwork.
+All images are embedded for offline use. The running overlay does not read the
+game archive, fetch assets from the web or access the game's memory.
+Colors/proportions are retained. Native WPF viewports select the recognizable
+part of the source picture. Since v1.13.1 the top-center announcement displays
+this artwork at 1.7 times the text size, with its aspect ratio preserved.
+
+OBJECT CUTOUTS
+Source page (retrieved 2026-10-16): https://lockbuilds.com/match-timeline
+Only pictures are used; that page's schedule is not used by the app.
+WebP decoded losslessly to RGBA PNG for WPF compatibility, without retouching.
+boxes / tunnels / midboxes -> object-crate.png
+  https://lockbuilds.b-cdn.net/timeline-assets/boxes.webp
+  Representative Fairfax crate; covers the category, not every container model.
+machines -> object-machine.png
+  https://lockbuilds.b-cdn.net/timeline-assets/Sinner%27s%20Sacrifice.webp
+  Sinner's Sacrifice marquee, soul display and controls (lower legs cropped).
+runes -> object-rune.png
+  https://lockbuilds.b-cdn.net/timeline-assets/Bridge%20buffs-runes.webp
+  Floating gun-buff stone. Represents rune spawning; does not predict buff type.
+midboss -> object-midboss.png (event remains disabled in the default profile)
+  https://lockbuilds.b-cdn.net/timeline-assets/Midboss.webp
+rift -> object-rift.png
+  https://all.gg/news/deadlock-patch-introduces-unstable-rift-and-major-hero-balance-changes/
+  https://static.bigbrain.gg/allgg/2026/06/Deadlock-Unstable-Rift.webp
+  Native 300x300 viewport around the portal in the original 1920x1080 screenshot.
+
+CURRENT GAME PORTRAITS
+Read-only extraction on 2026-10-16 from the user's installed Deadlock:
+C:\Program Files (x86)\Steam\steamapps\common\Deadlock\game\citadel\pak01_dir.vpk
+Every extracted entry's CRC32 was verified. Conversion: Source 2 Viewer CLI 20.1
+https://s2v.app/ — https://github.com/ValveResourceFormat/ValveResourceFormat
+Only decoded PNGs are embedded; no converter or archive reader ships at runtime.
+small -> panorama/images/npcs/neutrals/neutral_plant_weak_psd.vtex_c
+medium -> panorama/images/npcs/neutrals/neutral_plant_normal_psd.vtex_c
+large -> panorama/images/npcs/neutrals/neutral_plant_heavy_psd.vtex_c
+early -> panorama/images/npcs/neutrals/neutral_book_weak_psd.vtex_c
+lane -> panorama/images/npcs/trooper_psd.vtex_c (event remains disabled)
+Plant portraits illustrate camp tiers; the book illustrates the early category.
+They are representative creatures, not predictions of every camp's composition.
+Tempo adds tier digits 1/2/3 and category letters Р (early), Т (tunnels),
+М (above mid-boss); these small badges are not Valve artwork.
+
+The disabled, unverified snacks event retains health_pad_psd.png, the game's
+generic health marker from panorama/images/minimap/health_pad_psd.vtex_c.
+It is not presented as a picture of a particular snack model.
+Older minimap PNGs remain in the source folder but are no longer selected for
+the ten enabled categories. No timing, animation or visibility setting changed.

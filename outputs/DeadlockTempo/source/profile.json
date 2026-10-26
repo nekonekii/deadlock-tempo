@@ -1,0 +1,77 @@
+{
+  "Name": "City Never Sleeps · выбранные события",
+  "EvidenceDate": "Чаша и разлом: публикации Valve проверены 20.10.2026",
+  "ObjectiveEventsVersion": 1,
+  "Events": [
+    {
+      "Id": "small",
+      "Enabled": true,
+      "Name": "Малые лагеря · I",
+      "First": "02:00",
+      "Note": "Первое появление малых лагерей.",
+      "Source": "https://www.dltimes.com/articles/city-never-sleeps-spawn-timers"
+    },
+    {
+      "Id": "boxes",
+      "Enabled": true,
+      "Name": "Коробки и контейнеры баффов",
+      "First": "03:00",
+      "Note": "Основная группа, включая Tough Crates. Возврат зависит от разрушения и подбора.",
+      "Source": "https://deadlock.wiki/Crates"
+    },
+    {
+      "Id": "medium",
+      "Enabled": true,
+      "Name": "Средние лагеря · II",
+      "First": "05:00",
+      "Note": "Первое появление средних лагерей. Ранние лагеря районов не включены в расписание.",
+      "Source": "https://www.dltimes.com/articles/city-never-sleeps-spawn-timers"
+    },
+    {
+      "Id": "runes",
+      "Enabled": true,
+      "Name": "Руны · баффы на мостах",
+      "First": "05:00",
+      "Every": "05:00",
+      "Note": "Фиксированное расписание: 5:00, 10:00, 15:00… Подбор не отслеживается.",
+      "Source": "https://www.dltimes.com/articles/city-never-sleeps-spawn-timers"
+    },
+    {
+      "Id": "large",
+      "Enabled": true,
+      "Name": "Крупные лагеря · III",
+      "First": "08:00",
+      "Note": "Первое появление крупных лагерей.",
+      "Source": "https://www.dltimes.com/articles/city-never-sleeps-spawn-timers"
+    },
+    {
+      "Id": "machines",
+      "Enabled": true,
+      "Name": "Автоматы · Sinner’s Sacrifice",
+      "First": "08:00",
+      "Note": "Также объекты Bell Tower / Sunken Plaza. Возврат после полной зачистки, не по часам матча.",
+      "Source": "https://www.dltimes.com/articles/city-never-sleeps-spawn-timers"
+    },
+    {
+      "Id": "urn",
+      "Enabled": true,
+      "Name": "Чаша душ · доставка",
+      "First": "10:00",
+      "Every": "05:00",
+      "Note": "Плановое появление: 10:00, 15:00, 20:00, 25:00… По публикации Valve от 30.06.2026. Подбор, перенос и сдача чаши не отслеживаются; уведомление сообщает о времени по расписанию, а не о доступности конкретной чаши.",
+      "Source": "https://store.steampowered.com/news/app/1422450/view/688635449342692003"
+    },
+    {
+      "Id": "rift",
+      "Enabled": true,
+      "Name": "Нестабильный разлом",
+      "First": "11:00",
+      "Until": "13:00",
+      "Every": "07:00",
+      "Approximate": true,
+      "RepeatReminder": true,
+      "Note": "Первое окно 11:00–13:00 сохранено как приблизительный ориентир. Затем в 18:00, 25:00, 32:00… показывается только напоминание ПРОВЕРЬ КАРТУ. Это НЕ расписание появления: Valve указывает интервал 7 минут со случайным смещением ±1 минута; отклонения могут накапливаться. Точное время нужно смотреть по объявлению игры (предупреждение за 20 секунд). Tempo пока не распознаёт это объявление. Проверены публикации Valve по 20.10.2026.",
+      "Source": "https://forums.playdeadlock.com/threads/06-30-2026-update.146261/"
+    }
+  ]
+}
